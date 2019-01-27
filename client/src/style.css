@@ -4,10 +4,22 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 90%;
+    height: 100vh;
+
 
 }
 
 .wrapper{
-    background: #AAA0A0;
+    background: rgba(170, 160, 160, 0.801);
 
+}
+
+.subtle-background{
+    background: url("./images/crossline-lines.png");
+}
+
+body{
+    background: url("./images/crossline-lines.png");
+    background: rgba(170, 160, 160, 0.801);
+   
 }

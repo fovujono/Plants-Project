@@ -39,7 +39,7 @@ class Products extends React.Component {
                   price={price}
                   stock={stock}
                 />
-              )) : "No Results Found"
+              )): "NO RESULTS" 
             
             }
               </div>
