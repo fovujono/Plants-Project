@@ -1,0 +1,41 @@
+.card {
+    background: #3B945E;
+    min-height: 250px;
+    margin: 6px;
+    margin-top: 20px;
+    /* position: relative; */
+    width: 200px;
+    color: black;
+    align-self: center;
+    transition: .3s;
+  }
+  
+  .card:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .3), 0 3px 6px rgba(0, 0, 0, .3);
+    
+  }
+  
+  .card > .img-container {
+    overflow: hidden;
+    text-align: center;
+  }
+  .card > .img-container > img {
+      height: 50%;
+      width: 100%;
+      transition: .3s;
+
+  }
+
+  .card > .img-container > img:hover{
+    transform: scale(1.1);
+  }
+  
+  .card > .content {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p{
+      font-size:17px;
+      margin: 1px;
+  }

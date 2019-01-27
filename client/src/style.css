@@ -1,0 +1,13 @@
+.content-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+
+}
+
+.wrapper{
+    background: #AAA0A0;
+
+}
