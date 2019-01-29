@@ -14,10 +14,10 @@ class Products extends React.Component {
         };
     }
 
-    handleSearch(e){
-        const value = e.target.value;
+    handleSearch(event){
+        const value = event.target.value;
         console.log(value.toLowerCase(), plants[0].plantName.toLowerCase().search(value.toLowerCase()) === -1)
-        const queriedObjs = plants.filter(e => e.plantName.toLowerCase().search(value.toLowerCase()) !== -1);
+        const queriedObjs = plants.filter(event => event.plantName.toLowerCase().search(value.toLowerCase()) !== -1);
         this.setState({plants: queriedObjs});
         console.log('state plants', this.state.plants)
     }
