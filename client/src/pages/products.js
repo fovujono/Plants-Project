@@ -35,7 +35,7 @@ class Products extends React.Component {
                   key={id}
                   plantName={plantName}
                   image={image}
-                  price={price}
+                  price={"$" + price}
                   stock={stock}
                 />
               )): "NO RESULTS" 

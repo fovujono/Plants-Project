@@ -2,7 +2,7 @@ import React from "react";
 
 const Signup =() =>{
     return(
-        <div></div>
+        <div className="signup-container">Signup Page</div>
     )
 };
 

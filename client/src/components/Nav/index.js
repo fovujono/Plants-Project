@@ -9,7 +9,7 @@ const Nav = (props) => {
       <div className="ui inverted secondary menu">
       <div className="logo"><a href="/" className="logo">Toledo's Plants</a></div>
          {props.children}
-        <a className="item right floated"> 
+        <a className="item right floated" href="/about"> 
             About Us
         </a>
         <a className="item" href="/checkout">

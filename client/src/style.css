@@ -1,25 +1,30 @@
-.content-wrapper{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 90%;
-    min-height: 100vh;
-
-
+.content-wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  min-height: 100vh;
 }
 
-.wrapper{
-    background: rgba(170, 160, 160, 0.801);
-
+.wrapper {
+  background: rgba(170, 160, 160, 0.801);
 }
 
-.subtle-background{
-    background: url("./images/crossline-lines.png");
+.subtle-background {
+  background: url("./images/crossline-lines.png");
 }
 
-body{
+body {
     background: url("./images/crossline-lines.png");
     background: rgba(170, 160, 160, 0.801);
-   
+  }
+  
+
+.checkout-container,
+.about-container,
+.login-container,
+.signup-container {
+  height: 100vh;
 }
+

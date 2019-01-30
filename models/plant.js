@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
   id: { type: Number, required: true, index: true },
-  image: String
+  image: String,
   plantName: { type: String, required: true },
-  price: type: Number,
+  price:{type:Number},
   stock: { type: Date, default: Date.now }
 });
 
