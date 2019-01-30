@@ -7,13 +7,17 @@ const Nav = (props) => {
   <div className="navbar-content">
     <div className="ui inverted segment" id="navbar-background">
       <div className="ui inverted secondary menu">
-      <div className="logo">Toledo's Plants</div>
+      <div className="logo"><a href="/" className="logo">Toledo's Plants</a></div>
          {props.children}
-        <a className="item right floated" href="/">
-          About Us
+        <a className="item right floated"> 
+            About Us
         </a>
-        <a className="item" href="/">
+        <a className="item" href="/checkout">
           Checkout
+        </a>
+
+        <a className="item" href="/login">
+          Sign In
         </a>
       </div>
   

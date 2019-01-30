@@ -1,7 +1,7 @@
 
 .search {
   width: 100%;
-  position: relative
+  position: relative;
 }
 
 .searchTerm {
@@ -37,7 +37,7 @@
 .wrap{
   width: 35%;
   position: absolute;
-  top: 50%;
+  top: 5.5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

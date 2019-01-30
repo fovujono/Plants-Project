@@ -11,5 +11,16 @@
     color:black;
 }
 
+.logo:hover{
+    color:green;
+}
+
+
+
+.item:active{
+    color: black;
+
+}
+
 
 

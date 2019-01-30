@@ -31,11 +31,11 @@
 }
 
 .card > .content {
-  font-size: 20px;
   text-align: center;
 }
 
 p {
+  font-family: 'Song Myung', serif;
   font-size: 16px;
   margin: 1px;
 }
