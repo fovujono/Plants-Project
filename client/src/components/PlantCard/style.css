@@ -1,10 +1,10 @@
 .card {
   background: #3b945e;
-  min-height: 230px;
+  min-height: 260px;
   margin: 6px;
   margin-top: 20px;
   /* position: relative; */
-  width: 200px;
+  width: 205px;
   color: black;
   align-self: center;
   transition: 0.3s;

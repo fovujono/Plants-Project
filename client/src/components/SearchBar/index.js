@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css'
 
 const SearchBar = ({handleSearch}) => {
+    console.log(handleSearch)
     return(
         <div className="wrap">
         <div className="search">

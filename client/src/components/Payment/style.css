@@ -1,0 +1,33 @@
+.add-to-cart{
+    background-color: bisque;
+    height: 25px;
+    width: 90px;
+    border: none;
+}
+
+.payment-container{ 
+ margin: auto;
+ margin-top: 5px;
+}
+
+.decrement{
+    font-size: 14px;
+    background-color: bisque;
+    border: none;
+    height: 25px;
+    width:20px;
+}
+.increment{
+    font-size: 14px;
+    background-color: bisque;
+    border: none;
+    height: 25px;
+    width:20px;
+   
+}
+.add-to-cart:hover,.decrement:hover,.increment:hover{
+    background-color: #2f794d;
+    
+
+  
+}
