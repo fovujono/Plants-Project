@@ -2,7 +2,9 @@ import React from "react";
 
 const Signup =() =>{
     return(
-        <div className="signup-container">Signup Page</div>
+        <div className="signup-container">
+
+        </div>
     )
 };
 
