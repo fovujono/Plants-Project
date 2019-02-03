@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import Modal from "../Modal";
 
 const Nav = (props) => {
   console.log(props)
@@ -16,9 +17,7 @@ const Nav = (props) => {
           Checkout
         </a>
 
-        <a className="item" href="/login">
-          Sign In
-        </a>
+        <Modal/>
       </div>
   
     </div>

@@ -1,9 +1,11 @@
 import React from 'react';
+import Modal from '../components/Modal';
 
 
 const About = () => {
     return(
-        <div className="about-container">Hello World</div>
+        <div className="about-container">
+        </div>
     )
 }
 
