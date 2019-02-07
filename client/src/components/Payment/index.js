@@ -5,18 +5,45 @@ class Payment extends React.Component {
   constructor(props) {
     super(props);
 
-    console.log(props)
-    this.state = {};
+ 
+    this.state = {
+      count: 0
+    };
+  }
+
+  handleIncrement = () => {
+    this.setState({ count: this.state.count +1 });
+  };
+
+  handleDecrement = () => {
+    this.setState({ count: this.state.count -1 });
+  };
+
+  addtToCart = () => {
+    
   }
 
   render() {
     return (
-        
+      <div>
       <div className="payment-container">
-          <button className="decrement">-</button>
-        <button className="add-to-cart">Add To Cart</button>
-          <button className="increment">+</button>
+   
+
+    
+          <button className="decrement" onClick={this.handleDecrement}>-</button>
+      
+ 
+    <input type="text" name="name" value={this.state.count}></input>
+ 
+     
+          <button className="increment" onClick={this.handleIncrement}>+</button>
+      
+
+   
       </div>
+      
+      <button className="add-to-cart">Add To Cart</button>
+    </div>
     );
   } 
 }

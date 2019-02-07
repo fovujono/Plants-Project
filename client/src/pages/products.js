@@ -1,5 +1,4 @@
 import React from "react";
-// import plants from "../plants.json";
 import API from "../utils/API";
 import PlantCard from "../components/PlantCard";
 import Payment from "../components/Payment";
@@ -30,7 +29,20 @@ class Products extends React.Component {
   };
 
 
-  // handleSearch(event) {
+  handleSearch(event) {
+    const value = event.target.value;
+  //  console.log(
+  //     value.toLowerCase(),
+  //     this.state.plants.plantName.toLowerCase().search(value.toLowerCase()) === -1
+  //   )
+    const queriedObjs = this.state.plants.filter(
+      event => event.plantName.toLowerCase().search(value.toLowerCase()) !== -1
+    );
+    this.setState({ plants: queriedObjs });
+    // console.log("state plants", this.state.plants);
+  }
+
+    // handleSearch(event) {
   //   const value = event.target.value;
   //   console.log(
   //     value.toLowerCase(),
@@ -42,11 +54,10 @@ class Products extends React.Component {
   //   this.setState({ plants: queriedObjs });
   //   console.log("state plants", this.state.plants);
   // }
-
   render() {
     return (
       <div>
-         <SearchBar /*handleSearch={this.handleSearch.bind(this)}*/ />  
+         <SearchBar handleSearch={this.handleSearch.bind(this)} />  
 
         <div className="content-wrapper">
           {this.state.plants.length !== 0
@@ -56,7 +67,7 @@ class Products extends React.Component {
                     image={plants.image}
                     plantName={plants.plantName}
                     price={"$" + plants.price}
-                    stock={plants.stock}
+                    // stock={plants.stock}
                   >
                     <Payment />
                   </PlantCard>

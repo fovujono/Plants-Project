@@ -14,7 +14,7 @@ const PlantCard = props => {
       <div className="content">
         <p> {props.plantName}</p>
         <p>{props.price}</p>
-        <p>{props.stock}</p> 
+        {/* <p>{props.stock}</p>  */}
         <Payment />
       </div>
       

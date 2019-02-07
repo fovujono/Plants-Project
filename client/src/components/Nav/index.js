@@ -3,7 +3,6 @@ import "./style.css";
 import Modal from "../Modal";
 
 const Nav = (props) => {
-  console.log(props)
   return (
   <div className="navbar-content">
     <div className="ui inverted segment" id="navbar-background">
