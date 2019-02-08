@@ -27,11 +27,13 @@
   height: 20px;
   width: 25px;
   margin-left: 2px;
+
 }
 .add-to-cart:hover,
 .decrement:hover,
 .increment:hover {
   background-color: #2f794d;
+  text-decoration: none;
 }
 
 input {

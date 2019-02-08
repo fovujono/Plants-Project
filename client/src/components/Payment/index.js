@@ -16,12 +16,17 @@ class Payment extends React.Component {
   };
 
   handleDecrement = () => {
-    this.setState({ count: this.state.count -1 });
-  };
-
-  addtToCart = () => {
-    
+    if(this.state.count <= 0){
+      this.setState(prevState => ({counter: prevState.count -1}))
+    }
+    else{
+      this.setState({ count: this.state.count-1})
+    }
   }
+
+  // addtToCart = () => {
+    
+  // }
 
   render() {
     return (
