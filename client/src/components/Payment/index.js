@@ -38,7 +38,7 @@ class Payment extends React.Component {
           <button className="decrement" onClick={this.handleDecrement}>-</button>
       
  
-    <input type="text" name="name" value={this.state.count}></input>
+    <input type="text" value={this.state.count}></input>
  
      
           <button className="increment" onClick={this.handleIncrement}>+</button>

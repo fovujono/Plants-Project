@@ -33,7 +33,13 @@
 .decrement:hover,
 .increment:hover {
   background-color: #2f794d;
-  text-decoration: none;
+}
+
+.add-to-cart,
+.decrement,
+.increment{
+  outline: none;
+
 }
 
 input {
