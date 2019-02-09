@@ -1,12 +1,16 @@
 import React from "react";
 import "./style.css";
-import "../../pages/products";
+// import API from "../../utils/API"
+import  '../../pages/products';
+
 class Payment extends React.Component {
   constructor(props) {
     super(props);
+console.log(loadData())
 
     this.state = {
-      count: 0
+      count: 0,
+  
     };
   }
 
@@ -19,7 +23,7 @@ class Payment extends React.Component {
       this.setState(prevState => ({ counter: prevState.count - 1 }));
     } else {
       this.setState({ count: this.state.count - 1 });
-    }
+    } 
   };
 
   onInputChange = value => {

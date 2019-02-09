@@ -9,11 +9,11 @@ const Nav = (props) => {
       <div className="ui inverted secondary menu">
       <div className="logo"><a href="/" className="logo">Toledo's Plants</a></div>
          {props.children}
-        <a className="item right floated" href="/about"> 
+        <a className="item right floated" id="about-us"href="/about"> 
             About Us
         </a>
         <a className="item" href="/checkout">
-          Checkout
+        <i className="fas fa-shopping-cart" id="shopping-icon"></i>
         </a>
 
         <Modal/>

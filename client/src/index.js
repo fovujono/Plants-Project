@@ -13,15 +13,13 @@ const App = () => {
   return (
     <Router>
       <div className="subtle-background">
-        <div className="wrapper">
-     
+        <div className="wrapper">   
             <Nav />
             <Route exact path="/" component={Products} />
             <Route exact path="/about" component={About} />
             <Route exact path="/checkout" component={Checkout} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/signup" component={Signup} />
-       
+            <Route exact path="/signup" component={Signup} />       
         </div>
       </div>
     </Router>

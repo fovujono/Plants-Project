@@ -16,11 +16,11 @@
 }
 
 
-
-.item:active{
-    color: black;
-
+#shopping-icon{
+    font-size: 20px;
+    text-align: center;
 }
+
 
 
 
