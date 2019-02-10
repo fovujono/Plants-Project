@@ -1,14 +1,12 @@
 import React from "react";
 import API from "../utils/API";
 import PlantCard from "../components/PlantCard";
-import Payment from "../components/Payment";
 import SearchBar from "../components/SearchBar";
 
 class Products extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
       plants: []
     };
   }
@@ -47,6 +45,7 @@ class Products extends React.Component {
 
   render() {
     return (
+      
       <div>
         <SearchBar handleSearch={this.handleSearch.bind(this)} />
 
@@ -57,11 +56,13 @@ class Products extends React.Component {
                   key={plants._id}
                   image={plants.image}
                   plantName={plants.plantName}
-                  price={"$" + plants.price}
+                  price={plants.price}
                   // stock={plants.stock}
                 >
-                  <Payment />
+                  
+          
                 </PlantCard>
+         
               ))
             : "NO RESULTS"}
         </div>
@@ -69,5 +70,6 @@ class Products extends React.Component {
     );
   }
 }
+
 
 export default Products;
