@@ -19,6 +19,7 @@ const PlantCard = props => {
           image={props.image}
           plantName={props.plantName}
           price={props.price}
+          stock={props.stock}
         />
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Modal from "../Modal";
+import Cart from "../Cart";
 
 const Nav = (props) => {
   return (
@@ -12,9 +13,7 @@ const Nav = (props) => {
         <a className="item right floated" id="about-us"href="/about"> 
             About Us
         </a>
-        <a className="item" href="/checkout">
-        <i className="fas fa-shopping-cart" id="shopping-icon"></i>
-        </a>
+        <Cart />
 
         <Modal/>
       </div>

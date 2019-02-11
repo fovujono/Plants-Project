@@ -2,32 +2,37 @@ import React from "react";
 import "./style.css";
 // import API from "../../utils/API"
 import "../../pages/products";
+import { CartHelper } from "../../utils/action";
 
 class Payment extends React.Component {
-  
   constructor(props) {
     super(props);
-
-    console.log("my price is" + " " + props.price)
-  
+    console.log('1', CartHelper.getCart());
+    console.log('2', CartHelper.getCart());
+    console.log("my price is " + props.price);
+    console.log("my stock" + props.stock)
+    console.log()
 
     this.state = {
       count: 0,
       price: props.price,
-      total: ""
+      total: 0,
+      stock: props.stock
       // total: 0
     };
-  };
-  
-
-  componentDidMount = () =>{
-    
-     this.setState({count: 0})
   }
 
-  
+  // componentDidMount = () =>{
+
+  //    this.setState({count: 0})
+  // }
+
   handleIncrement = () => {
-    this.setState({ count: this.state.count + 1 });
+    console.log(this.state.stock)
+    if (this.state.count > this.state.stock) {
+      return console.log("out of stock");
+    }
+    this.setState({ count: this.state.count + 1});
   };
 
   handleDecrement = () => {
@@ -43,15 +48,19 @@ class Payment extends React.Component {
   };
 
   addToCart = () => {
-  this.setState({total: this.state.count * this.state.price}) ;
-  console.log("Input Number is " + this.state.count + " " + "price" + " " + this.state.price)
-  console.log(this.state.total)
+    this.setState({ total: this.state.count * this.state.price });
 
-  console.log("this is the current count " + this.state.count )
-  
-  }
-
- 
+    console.log(
+      "Input Number is " +
+        this.state.count +
+        " " +
+        "price is" +
+        " " +
+        this.state.price
+    );
+    console.log("The Total is " + this.state.total);
+    console.log("this is the current count " + this.state.count);
+  };
 
   render() {
     return (
@@ -60,7 +69,7 @@ class Payment extends React.Component {
           <button className="decrement" onClick={this.handleDecrement}>
             -
           </button>
-
+        <h2>{this.state.total}</h2>
           <input
             type="text"
             value={this.state.count}
@@ -72,7 +81,9 @@ class Payment extends React.Component {
           </button>
         </div>
 
-        <button className="add-to-cart" onClick={this.addToCart}>Add To Cart</button>
+        <button className="add-to-cart" onClick={this.addToCart}>
+          Add To Cart
+        </button>
       </div>
     );
   }

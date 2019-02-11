@@ -7,6 +7,7 @@ class Products extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      searchedPlants: [],
       plants: []
     };
   }
@@ -19,7 +20,8 @@ class Products extends React.Component {
     API.getPlants()
       .then(res =>
         this.setState({
-          plants: res.data
+          plants: res.data,
+          searchedPlants: res.data
         })
       )
       .catch(err => console.log(err));
@@ -32,7 +34,7 @@ class Products extends React.Component {
       event => event.plantName.toLowerCase().search(value.toLowerCase()) !== -1
     );
 
-    this.setState({ plants: queriedObjs });
+    this.setState({ searchedPlants: queriedObjs });
   }
 
   //   handleSearch(e){
@@ -51,13 +53,13 @@ class Products extends React.Component {
 
         <div className="content-wrapper">
           {this.state.plants.length !== 0
-            ? this.state.plants.map(plants => (
+            ? this.state.searchedPlants.map(plants => (
                 <PlantCard
                   key={plants._id}
                   image={plants.image}
                   plantName={plants.plantName}
                   price={plants.price}
-                  // stock={plants.stock}
+                  stock={plants.stock}
                 >
                   
           
