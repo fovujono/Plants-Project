@@ -14,16 +14,16 @@ class Payment extends React.Component {
     console.log();
 
     this.state = {
-      count: 0,
+      count: 1,
       price: props.price,
-      total: 0,
-      stock: props.stock
+      stock: props.stock,
+      total: null,
+      totalHolder: props.price
     };
   }
 
 
   handleIncrement = () => {
-    console.log(this.state.stock);
     if (this.state.count > this.state.stock) {
       return alert("Out of Stock");
     }
@@ -43,20 +43,11 @@ class Payment extends React.Component {
   };
 
   addToCart = () => {
-    this.setState({ total: this.state.count * this.state.price });
-  
+    this.setState({ totalHolder: this.state.count * this.state.price });
+    
+    this.setState({ total: this.state.totalHolder + this.state.total});
 
-    console.log(
-      "Input Number is " +
-        this.state.count +
-        " " +
-        "price is" +
-        " " +
-        this.state.price
-    );
-
-    console.log("this is the current count " + this.state.count);
-    return(    console.log("The Total is " + this.state.total))
+   
   };
 
   render() {
@@ -66,7 +57,7 @@ class Payment extends React.Component {
           <button className="decrement" onClick={this.handleDecrement}>
             -
           </button>
-          
+
           <input
             type="text"
             value={this.state.count}
@@ -81,6 +72,8 @@ class Payment extends React.Component {
         <button className="add-to-cart" onClick={this.addToCart}>
           Add To Cart
         </button>
+
+        <p> Total: {this.state.total}</p>
       </div>
     );
   }
