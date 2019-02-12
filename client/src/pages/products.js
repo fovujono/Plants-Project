@@ -31,8 +31,8 @@ class Products extends React.Component {
     const value = event.target.value;
 
     const queriedObjs = this.state.plants.filter(
-      event => event.plantName.toLowerCase().search(value.toLowerCase()) !== -1
-    );
+      event => event.plantName.toLowerCase().search(value.toLowerCase().replace(/[^a-zA-Z0-9]+/g, "-")) !== -1
+    );   
 
     this.setState({ searchedPlants: queriedObjs });
   }
