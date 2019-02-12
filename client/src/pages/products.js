@@ -31,23 +31,17 @@ class Products extends React.Component {
     const value = event.target.value;
 
     const queriedObjs = this.state.plants.filter(
-      event => event.plantName.toLowerCase().search(value.toLowerCase().replace(/[^a-zA-Z0-9]+/g, "-")) !== -1
-    );   
+      event =>
+        event.plantName
+          .toLowerCase()
+          .search(value.toLowerCase().replace(/[^a-zA-Z0-9]+/g, "-")) !== -1
+    );
 
     this.setState({ searchedPlants: queriedObjs });
   }
 
-  //   handleSearch(e){
-  //     const value = e.target.value;
-
-  //     const queriedObjs = plants.filter(e => e.plantName.toLowerCase().search(value.toLowerCase()) !== -1);
-  //     this.setState({plants: queriedObjs});
-  //     console.log('state plants', this.state.plants)
-  // }
-
   render() {
     return (
-      
       <div>
         <SearchBar handleSearch={this.handleSearch.bind(this)} />
 
@@ -60,18 +54,12 @@ class Products extends React.Component {
                   plantName={plants.plantName}
                   price={plants.price}
                   stock={plants.stock}
-                >
-                  
-          
-                </PlantCard>
-         
-              ))
-            : "NO RESULTS"}
+                />
+              )): "NO RESULTS"}
         </div>
       </div>
     );
   }
 }
-
 
 export default Products;

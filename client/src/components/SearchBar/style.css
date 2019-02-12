@@ -2,10 +2,12 @@
 .search {
   width: 100%;
   position: relative;
+  
 }
 
 .searchTerm {
   float: left;
+  text-align: left;
   width: 100%;
   border: 3px solid #182628;
   padding: 5px;

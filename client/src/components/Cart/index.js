@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Button, Image, Modal } from "semantic-ui-react";
+import {Image, Modal } from "semantic-ui-react";
 import { CartHelper } from "../../utils/action";
 
 class Cart extends React.Component {
@@ -20,9 +20,9 @@ class Cart extends React.Component {
       <div className="cart-modal">
         <Modal
           trigger={
-            <a className="item">
+            <button className="item">
               <i className="fas fa-shopping-cart" id="shopping-icon" />
-            </a>
+            </button>
           }
         >
           <Modal.Header>Your Cart</Modal.Header>
@@ -35,7 +35,7 @@ class Cart extends React.Component {
                     {this.state.products.map(e =>
                         <div className="cart-entry"  style={{display: "flex"}}>
                             <div className="img-box" style={{width: "130px"}}>
-                                <img src={e.image} style={{width: "100%", height: "auto"}} /> 
+                                <img src={e.image} alt={e.image} style={{width: "100%", height: "auto"}} /> 
                             </div>
                             <div className="content-box">
                                 <p>Plant:{e.plantName}</p>
