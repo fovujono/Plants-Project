@@ -17,11 +17,9 @@ class Payment extends React.Component {
       count: 1,
       price: props.price,
       stock: props.stock,
-      total: null,
-      totalHolder: props.price
+      total: 0
     };
   }
-
 
   handleIncrement = () => {
     if (this.state.count > this.state.stock) {
@@ -43,11 +41,9 @@ class Payment extends React.Component {
   };
 
   addToCart = () => {
-    this.setState({ totalHolder: this.state.count * this.state.price });
-    
-    this.setState({ total: this.state.totalHolder + this.state.total});
+    const math = this.state.count * this.state.price + this.state.total;
 
-   
+    this.setState({ total: math });
   };
 
   render() {
