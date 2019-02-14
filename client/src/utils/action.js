@@ -9,11 +9,7 @@ export const CartHelper = class {
          return this.cartData;
      }
  
-     static setCart(data) {
-         // This will push the data into the cart array
-         this.cartData = this.cartData.push(data);
-     }
- 
+
  
      static removeFromCartById(id){
          // This will find all objs that are not equal to the param id and assign that new array

@@ -37,14 +37,15 @@ class Payment extends React.Component {
   };
 
   addToCart = () => {
+    let products = [];
 
-    // const products = [1, 2];
+   let data = this.state;
 
-    // localStorage.setItem('plant', JSON.stringify(products))
-    const products = this.state.price;
+    products = JSON.parse(localStorage.getItem("products"));
 
+    products.push(data);
 
-    localStorage.setItem("products",JSON.stringify(products));
+    localStorage.setItem("products", JSON.stringify(products));
   };
 
   render() {

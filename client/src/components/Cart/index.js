@@ -13,12 +13,11 @@ class Cart extends React.Component {
   }
 
   componentDidMount() {
-   alert( CartHelper.getCart())
+   alert(CartHelper.getCart())
   }
  
   render() {
     console.log(this.state.products);
-    console.log( "total" + this.props.total)
   
 
     return (
