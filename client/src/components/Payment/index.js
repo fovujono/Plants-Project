@@ -8,7 +8,6 @@ import { CartHelper } from "../../utils/action";
 class Payment extends React.Component {
   constructor(props) {
     super(props);
-    console.log("1", CartHelper.getCart());
 
     this.state = {
       count: 1,
@@ -39,9 +38,13 @@ class Payment extends React.Component {
 
   addToCart = () => {
 
+    // const products = [1, 2];
+
+    // localStorage.setItem('plant', JSON.stringify(products))
+    const products = this.state.price;
 
 
-    localStorage.setItem("my current time", Date.now());
+    localStorage.setItem("products",JSON.stringify(products));
   };
 
   render() {

@@ -12,6 +12,9 @@ class Cart extends React.Component {
     };
   }
 
+  componentDidMount() {
+   alert( CartHelper.getCart())
+  }
  
   render() {
     console.log(this.state.products);
