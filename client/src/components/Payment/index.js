@@ -12,10 +12,10 @@ class Payment extends React.Component {
     this.state = {
       count: 1,
       price: props.price,
-      stock: props.stock,
-      total: 0
+      stock: props.stock
     };
   }
+
 
   handleIncrement = () => {
     if (this.state.count > this.state.stock) {
@@ -39,13 +39,20 @@ class Payment extends React.Component {
   addToCart = () => {
     let products = [];
 
-   let data = this.state;
+    let data = this.state;
+
+    if (localStorage.getItem("products") === null) {
+     
+     
+      localStorage.setItem("products", JSON.stringify(products));
+    } else {
 
     products = JSON.parse(localStorage.getItem("products"));
 
     products.push(data);
 
     localStorage.setItem("products", JSON.stringify(products));
+    }
   };
 
   render() {
