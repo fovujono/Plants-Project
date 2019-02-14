@@ -12,10 +12,12 @@ class Cart extends React.Component {
     };
   }
 
-
-
+ 
   render() {
     console.log(this.state.products);
+    console.log( "total" + this.props.total)
+  
+
     return (
       <div className="cart-modal">
         <Modal
@@ -25,12 +27,12 @@ class Cart extends React.Component {
             </button>
           }
         >
-          <Modal.Header>Your Cart</Modal.Header>
+          <Modal.Header><p> Total: {this.props.total} </p></Modal.Header>
           <Modal.Content image>
 
             <Modal.Description>
-              <div className="cart-css">
-                    <p>Plants in Cart:</p>
+              {/* <div className="cart-css">
+              
                     <div className="product-box">
                     {this.state.products.map(e =>
                         <div className="cart-entry"  style={{display: "flex"}}>
@@ -45,8 +47,10 @@ class Cart extends React.Component {
                         </div>
                     )}
                     </div>
-                    <p>Total: </p>
-               </div>
+                    
+                   
+                   
+               </div> */}
             </Modal.Description>
             <Image
         wrapped

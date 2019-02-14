@@ -2,6 +2,11 @@
 #navbar-background{
     background-color: #3B945E;
     border-radius: 0px;
+    height: 80px;
+}
+
+.navbar-content{
+    
 }
 
 .logo{

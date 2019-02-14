@@ -2,16 +2,13 @@ import React from "react";
 import "./style.css";
 // import API from "../../utils/API"
 import "../../pages/products";
+import Cart from "../Cart";
 import { CartHelper } from "../../utils/action";
 
 class Payment extends React.Component {
   constructor(props) {
     super(props);
     console.log("1", CartHelper.getCart());
-    console.log("2", CartHelper.getCart());
-    console.log("my price is " + props.price);
-    console.log("my stock" + props.stock);
-    console.log();
 
     this.state = {
       count: 1,
@@ -41,9 +38,10 @@ class Payment extends React.Component {
   };
 
   addToCart = () => {
-    const math = this.state.count * this.state.price + this.state.total;
 
-    this.setState({ total: math });
+
+
+    localStorage.setItem("my current time", Date.now());
   };
 
   render() {
@@ -68,8 +66,6 @@ class Payment extends React.Component {
         <button className="add-to-cart" onClick={this.addToCart}>
           Add To Cart
         </button>
-
-        <p> Total: {this.state.total}</p>
       </div>
     );
   }

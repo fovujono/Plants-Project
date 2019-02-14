@@ -55,7 +55,8 @@ class Products extends React.Component {
                   price={plants.price}
                   stock={plants.stock}
                 />
-              )): "NO RESULTS"}
+              ))
+            : "NO RESULTS"}
         </div>
       </div>
     );

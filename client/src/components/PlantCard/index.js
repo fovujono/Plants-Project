@@ -4,15 +4,13 @@ import Payment from "../Payment";
 
 const PlantCard = props => {
   return (
-    
     <div className="card">
-  
       <div className="img-container">
         <img alt={props.plantName} src={props.image} />
       </div>
       <div className="content">
         <p> {props.plantName}</p>
-        <p>{props.price}</p>
+        <p>${props.price}</p>
         {/* <p>{props.stock}</p>  */}
         <Payment
           key={props._id}

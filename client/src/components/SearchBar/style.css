@@ -11,7 +11,7 @@
   width: 100%;
   border: 3px solid #182628;
   padding: 5px;
-  height: 38px;
+  height: 50px;
   border-radius: 5px;
   outline: none;
   color: #9DBFAF;
@@ -24,8 +24,8 @@
 .searchButton {
   position: absolute;  
   right: -50px;
-  width: 40px;
-  height: 38px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #182628;
   background: #182628;
   text-align: center;
@@ -35,7 +35,7 @@
   font-size: 20px;
 }
 
-/*Resize the wrap to see the search bar change!*/
+/*Resize the wrap to change*/
 .wrap{
   width: 35%;
   position: absolute;

@@ -46,7 +46,7 @@ mongoose.connect(
   },
 {
     image:
-      "https://cdn.pixabay.com/photo/2018/10/07/06/44/persimmon-3729306_1280.jpg",
+      "https://images.pexels.com/photos/221094/pexels-photo-221094.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     plantName: "Persimmons",
     price: 15,
     stock: 10
