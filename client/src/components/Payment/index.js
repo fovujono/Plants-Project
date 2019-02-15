@@ -9,7 +9,9 @@ class Payment extends React.Component {
     this.state = {
       count: 1,
       price: props.price,
-      stock: props.stock
+      stock: props.stock,
+      plantName: props.plantName,
+      image: props.image
     };
   }
 
