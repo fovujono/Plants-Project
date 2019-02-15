@@ -1,9 +1,6 @@
 import React from "react";
 import "./style.css";
-// import API from "../../utils/API"
 import "../../pages/products";
-import Cart from "../Cart";
-import { CartHelper } from "../../utils/action";
 
 class Payment extends React.Component {
   constructor(props) {
@@ -15,7 +12,6 @@ class Payment extends React.Component {
       stock: props.stock
     };
   }
-
 
   handleIncrement = () => {
     if (this.state.count > this.state.stock) {
@@ -41,17 +37,16 @@ class Payment extends React.Component {
 
     let data = this.state;
 
-    if (localStorage.getItem("products") === null) {
-     
-     
-      localStorage.setItem("products", JSON.stringify(products));
+    if (localStorage.getItem("cart") === null) {
+      products.push(data);
+      localStorage.setItem("cart", JSON.stringify(products));
     } else {
+      products = JSON.parse(localStorage.getItem("cart"));
 
-    products = JSON.parse(localStorage.getItem("products"));
+      products.push(data);
 
-    products.push(data);
-
-    localStorage.setItem("products", JSON.stringify(products));
+      localStorage.setItem("cart", JSON.stringify(products));
+      console.log(products);
     }
   };
 

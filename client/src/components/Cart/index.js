@@ -1,19 +1,21 @@
 import React from "react";
 import "./style.css";
 import {Image, Modal } from "semantic-ui-react";
-import { CartHelper } from "../../utils/action";
 
 class Cart extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      products: CartHelper.getCart()
+      products: 0
     };
   }
 
   componentDidMount() {
-   alert(CartHelper.getCart())
+    localStorage.getItem("cart")
+
+  
+
   }
  
   render() {
