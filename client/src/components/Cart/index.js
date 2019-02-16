@@ -39,7 +39,7 @@ class Cart extends React.Component {
               <div className="content-box">
                 <p>Plant: {cart.plantName}</p>
                 <p>Amount: {cart.count}</p>
-                <p>Price of eachn: ${cart.price}</p>
+                <p>Price of each: ${cart.price}</p>
                 <hr />
               </div>
             </div>
