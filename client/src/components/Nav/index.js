@@ -15,7 +15,7 @@ const Nav = (props) => {
         </a>
         <Cart />
 
-        <Modal/>
+        <Modal />
       </div>
   
     </div>

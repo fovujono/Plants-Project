@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import "../../pages/products";
+import { CartHelper } from '../../utils/action';
 
 class Payment extends React.Component {
   constructor(props) {
@@ -35,29 +36,14 @@ class Payment extends React.Component {
   };
 
   addToCart = () => {
-    let products = [];
-
+   
     let data = this.state;
-
-    if (localStorage.getItem("cart") === null) {
-      products.push(data);
-      localStorage.setItem("cart", JSON.stringify(products));
-    } else {
-      products = JSON.parse(localStorage.getItem("cart"));
-
-      products.push(data);
-
-      localStorage.setItem("cart", JSON.stringify(products));
-      console.log(products);
-    }
+    CartHelper.setCart(data);
   };
 
-
-
-  onClick =()=>{
+  onClick = () => {
     this.addToCart();
-
-  }
+  };
   render() {
     return (
       <div>

@@ -1,27 +1,15 @@
 import React from "react";
 import "./style.css";
 import { Image, Modal } from "semantic-ui-react";
+import { CartHelper } from '../../utils/action'
 
 class Cart extends React.Component {
   constructor(props) {
-    super(props);
-    let cart = JSON.parse(localStorage.getItem("cart"));
-    console.log(cart);
+    super();
     this.state = {
-      cart: cart,
+      cart: [],
       total: 0
     };
-  }
-
-  componentDidMount = () => {
-    if (this.state.cart) {
-    let cartTotal = this.state.cart.reduce((acc, cart) => cart.price * cart.count + acc, 0);
-
-
-    this.setState({total: cartTotal})
-
-    console.log("cart total" + cartTotal)
-    }
   }
 
 
@@ -52,16 +40,24 @@ class Cart extends React.Component {
     }
   };
 
+  openCart() {
+    const cartData = CartHelper.getCart();
+    let cartTotal = cartData.reduce((acc, cart) => cart.price * cart.count + acc, 0);
+    this.setState({cart: cartData, total: cartTotal});
+  }
+
 
   render() {
     return (
       <div className="cart-modal">
         <Modal
-          trigger={
+          trigger={ 
             <button className="item">
               <i className="fas fa-shopping-cart" id="shopping-icon" />
             </button>
           }
+          onOpen ={() => this.openCart()}
+          
         >
           <Modal.Header>
             <p> Your Cart </p>

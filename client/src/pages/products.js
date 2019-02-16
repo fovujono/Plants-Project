@@ -46,7 +46,7 @@ class Products extends React.Component {
         <SearchBar handleSearch={this.handleSearch.bind(this)} />
 
         <div className="content-wrapper">
-          {this.state.plants.length !== 0
+          {this.state.searchedPlants.length !== 0
             ? this.state.searchedPlants.map(plants => (
                 <PlantCard
                   key={plants._id}
