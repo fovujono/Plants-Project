@@ -1,4 +1,22 @@
-/* .ui.modal{
-    height: 500px;
-    width: 400px;
-} */
+.cart-entry{
+    display: flex;
+}
+
+
+.img-box{
+    width: 130px;
+}
+
+.image{
+    width: 80%;
+    height: auto;
+}
+
+.content-box{
+    height:  auto;
+}
+
+.total-container{
+    height: auto;
+    font-weight: 900;
+}

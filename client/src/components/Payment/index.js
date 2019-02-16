@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import "../../pages/products";
+import "../Cart";
 
 class Payment extends React.Component {
   constructor(props) {
@@ -52,6 +53,12 @@ class Payment extends React.Component {
     }
   };
 
+
+
+  onClick =()=>{
+    this.addToCart();
+
+  }
   render() {
     return (
       <div>
@@ -71,7 +78,7 @@ class Payment extends React.Component {
           </button>
         </div>
 
-        <button className="add-to-cart" onClick={this.addToCart}>
+        <button className="add-to-cart" onClick={this.onClick}>
           Add To Cart
         </button>
       </div>
