@@ -14,12 +14,14 @@ class Cart extends React.Component {
   }
 
   componentDidMount = () => {
+    if (this.state.cart) {
     let cartTotal = this.state.cart.reduce((acc, cart) => cart.price * cart.count + acc, 0);
 
 
     this.setState({total: cartTotal})
 
     console.log("cart total" + cartTotal)
+    }
   }
 
 
@@ -37,7 +39,7 @@ class Cart extends React.Component {
               <div className="content-box">
                 <p>Plant: {cart.plantName}</p>
                 <p>Amount: {cart.count}</p>
-                <p>Price: ${cart.price}</p>
+                <p>Price of each: ${cart.price}</p>
                 <hr />
               </div>
             </div>
