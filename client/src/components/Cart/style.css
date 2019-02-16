@@ -18,5 +18,15 @@
 
 .total-container{
     height: auto;
+    font-size: 22px;
     font-weight: 900;
+}
+
+.checkout-button{
+    background-color: #4CAF50;
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+  
 }

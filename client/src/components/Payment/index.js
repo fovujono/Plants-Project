@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import "../../pages/products";
-import "../Cart";
 
 class Payment extends React.Component {
   constructor(props) {

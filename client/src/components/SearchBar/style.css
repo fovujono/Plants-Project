@@ -11,7 +11,7 @@
   width: 100%;
   border: 3px solid #182628;
   padding: 5px;
-  height: 50px;
+  height: 45px;
   border-radius: 5px;
   outline: none;
   color: #9DBFAF;
@@ -24,8 +24,8 @@
 .searchButton {
   position: absolute;  
   right: -50px;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border: 1px solid #182628;
   background: #182628;
   text-align: center;
@@ -39,7 +39,7 @@
 .wrap{
   width: 35%;
   position: absolute;
-  top: 5.5%;
+  top: 5.3%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

@@ -45,6 +45,8 @@ class Cart extends React.Component {
             </div>
           ))}
               <p className="total-container"> Total: {this.state.total}</p>
+
+              <button className="checkout-button">Check Out</button>
         </div>
       );
     }
