@@ -14,6 +14,7 @@ const PlantCard = props => {
         {/* <p>{props.stock}</p>  */}
         <Payment
           key={props._id}
+          id={props._id}
           image={props.image}
           plantName={props.plantName}
           price={props.price}

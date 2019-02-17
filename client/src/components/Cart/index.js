@@ -5,13 +5,29 @@ import { CartHelper } from '../../utils/action'
 
 class Cart extends React.Component {
   constructor(props) {
-    super();
+    super(props);
+    console.log("cart state" + this.state)
+    
     this.state = {
       cart: [],
-      total: 0
+      total: 0,
+  
     };
   }
 
+  removeItem(id) {
+    console.log('removing ' + id)
+    const new_cart = CartHelper.removeFromCartById(id);
+    const cartTotal = new_cart.reduce((acc, cart) => cart.price * cart.count + acc, 0);
+    this.setState({cart: new_cart, total: cartTotal});
+  }
+
+
+  itemsInCart = () => {
+    let cartItems = this.state.cart.filter(cart => cart.plantName);
+    let cartTotal = cartItems.length;
+      
+  }
 
   renderCart = () => {
 
@@ -28,6 +44,7 @@ class Cart extends React.Component {
                 <p>Plant: {cart.plantName}</p>
                 <p>Amount: {cart.count}</p>
                 <p>Price of each: ${cart.price}</p>
+                <button onClick={(e) => this.removeItem(cart.id)} style={{'float': 'right'}}>X</button>
                 <hr />
               </div>
             </div>

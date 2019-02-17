@@ -1,13 +1,10 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/plants"
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/plants");
 
- const plantSeed = [
+const plantSeed = [
   {
-  
     image:
       "https://images.pexels.com/photos/33316/magnolia-flowers-park-spring.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     plantName: "Magnolia",
@@ -15,7 +12,6 @@ mongoose.connect(
     stock: 40
   },
   {
-  
     image:
       "https://images.pexels.com/photos/1034403/pexels-photo-1034403.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     plantName: "Bougainvillea",
@@ -23,12 +19,11 @@ mongoose.connect(
     stock: 20
   },
   {
-   
     image:
       "https://images.unsplash.com/photo-1519966283370-ba7869cd01ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     plantName: "Kumquat Tree",
     price: 13,
-    stock: 20 
+    stock: 20
   },
   {
     image:
@@ -37,14 +32,14 @@ mongoose.connect(
     price: 12,
     stock: 12
   },
-{
+  {
     image:
       "https://cdn.pixabay.com/photo/2014/04/10/16/30/mango-321071_1280.jpg",
     plantName: "Mango Tree",
     price: 25,
     stock: 10
   },
-{
+  {
     image:
       "https://images.pexels.com/photos/221094/pexels-photo-221094.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     plantName: "Persimmons",
@@ -52,7 +47,6 @@ mongoose.connect(
     stock: 10
   },
   {
-
     image:
       "https://cdn.pixabay.com/photo/2017/08/11/17/41/peach-2632182_1280.jpg",
     plantName: "Peach",
@@ -60,7 +54,6 @@ mongoose.connect(
     stock: 12
   },
   {
-
     image:
       "https://images.all-free-download.com/images/graphiclarge/img_3694_f_cf14_red_knockout_roses_winter_blooms_562781.jpg",
     plantName: "Knockout Rose",
@@ -68,14 +61,13 @@ mongoose.connect(
     stock: 40
   },
   {
-
     image:
       "https://cdn.pixabay.com/photo/2012/11/12/18/12/camellia-65804_1280.jpg",
     plantName: "Camellia Tree",
     price: 12,
     stock: 13
   },
-{
+  {
     image:
       "https://images.unsplash.com/photo-1547048115-ec9926503c93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
     plantName: "Hibiscus",
@@ -151,11 +143,10 @@ mongoose.connect(
     plantName: "Plumbago",
     price: 9,
     stock: 10
-  }];
+  }
+];
 
-
-  db.Plant
-  .remove({})
+db.Plant.remove({})
   .then(() => db.Plant.collection.insertMany(plantSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");

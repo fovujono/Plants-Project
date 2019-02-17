@@ -50,6 +50,7 @@ class Products extends React.Component {
             ? this.state.searchedPlants.map(plants => (
                 <PlantCard
                   key={plants._id}
+                  _id={plants._id}
                   image={plants.image}
                   plantName={plants.plantName}
                   price={plants.price}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import "../../pages/products";
+import { Button, Icon } from 'semantic-ui-react'
 import { CartHelper } from '../../utils/action';
 
 class Payment extends React.Component {
@@ -9,10 +10,7 @@ class Payment extends React.Component {
 
     this.state = {
       count: 1,
-      price: props.price,
-      stock: props.stock,
-      plantName: props.plantName,
-      image: props.image
+      ...props
     };
   }
 
@@ -36,14 +34,11 @@ class Payment extends React.Component {
   };
 
   addToCart = () => {
-   
+    console.log('state', this.state)
     let data = this.state;
     CartHelper.setCart(data);
   };
 
-  onClick = () => {
-    this.addToCart();
-  };
   render() {
     return (
       <div>
@@ -62,8 +57,14 @@ class Payment extends React.Component {
             +
           </button>
         </div>
+        {/* <Button toggle animated='vertical' className="add-to-cart" onClick={this.onClick}>
+      <Button.Content hidden>Added</Button.Content>
+      <Button.Content visible>
+        Add to Cart
+      </Button.Content>
+    </Button> */}
 
-        <button className="add-to-cart" onClick={this.onClick}>
+        <button className="add-to-cart" onClick={this.addToCart}>
           Add To Cart
         </button>
       </div>
