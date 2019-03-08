@@ -1,36 +1,44 @@
-
-#navbar-background{
-    background-color: #3B945E;
-    border-radius: 0px;
-    height: 80px;
+#navbar-background {
+  background-color: #3b945e;
+  border-radius: 0px;
+  height: 80px;
 }
 
-.navbar-content{
-    
+.navbar-content {
+    width: 100%
 }
 
-.logo{
-    font-family: 'Abril Fatface', cursive;
-    font-size:30px;
-    font-weight:bold;
-    color:black;
-    margin-top: 1rem;
+.logo {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 1rem;
+  margin-left:10px;
 }
 
-.logo:hover{
-    color:green;
+.font-one {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  text-shadow: -.5px -.5px 0 rgb(172, 172, 172), .5px -.5px 0 rgb(172, 172, 172), -.5px .5px 0 rgb(172, 172, 172),
+  .5px .5px 0 rgb(172, 172, 172);
 }
 
-#about-us{
-    font-size: 18px;
+.font-two {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  text-shadow: -.5px -.5px 0 rgb(172, 172, 172), .5px -.5px 0 rgb(172, 172, 172), -.5px .5px 0 rgb(172, 172, 172),
+  .5px .5px 0 rgb(172, 172, 172);
 }
 
-#shopping-icon{
-    font-size: 25px;
-    text-align: center;
-    margin-right: 20px;
+.logo:hover {
+  color: green;
 }
 
+#about-us {
+  font-size: 18px;
+}
 
-
-
+#shopping-icon {
+  font-size: 25px;
+  text-align: center;
+  margin-right: 20px;
+}
