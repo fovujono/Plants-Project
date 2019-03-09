@@ -25,8 +25,7 @@ class Cart extends React.Component {
 
   itemsInCart = () => {
     let cartItems = this.state.cart.filter(cart => cart.plantName);
-    let cartTotal = cartItems.length;
-      
+    let cartTotal = cartItems.length;    
   }
 
   renderCart = () => {
@@ -39,14 +38,15 @@ class Cart extends React.Component {
             <div className="cart-entry">
               <div className="img-box">
                 <img className="image" src={cart.image} alt={cart.image} />
+                
               </div>
               <div className="content-box">
                 <p>Plant: {cart.plantName}</p>
-                <p>Amount: {cart.count}</p>
-                <p>Price of each: ${cart.price}</p>
-                <button onClick={(e) => this.removeItem(cart.id)} style={{'float': 'right'}}>X</button>
-                <hr />
+                <p>Amount: {cart.count} </p>
+                <p>Price of each: ${cart.price} <a onClick={(e) => this.removeItem(cart.id)} style={{'float': 'right', 'font-size': '15px', 'cursor': 'pointer'}}>Delete</a></p>       
+                <hr/>        
               </div>
+              
             </div>
           ))}
               <p className="total-container"> Total: {this.state.total}</p>

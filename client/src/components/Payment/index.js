@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import "../../pages/products";
-import { Button, Icon } from 'semantic-ui-react'
 import { CartHelper } from '../../utils/action';
 
 class Payment extends React.Component {
@@ -57,12 +56,7 @@ class Payment extends React.Component {
             +
           </button>
         </div>
-        {/* <Button toggle animated='vertical' className="add-to-cart" onClick={this.onClick}>
-      <Button.Content hidden>Added</Button.Content>
-      <Button.Content visible>
-        Add to Cart
-      </Button.Content>
-    </Button> */}
+
 
         <button className="add-to-cart" onClick={this.addToCart}>
           Add To Cart

@@ -9,11 +9,12 @@
 
 .image{
     width: 80%;
-    height: auto;
+    height: 80%;
 }
 
 .content-box{
     height:  auto;
+    width: 70%;
 }
 
 .total-container{
