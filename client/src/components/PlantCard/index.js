@@ -30,12 +30,12 @@ class PlantCard extends React.Component {
         >
           <FrontSide style={{ padding: "0rem", boxShadow: "none" }}>
             <div className="card">
-              <a
+              <button
                 className="toggle-style"
                 onClick={() => this.flippyHorizontal.toggle()}
               >
-                Learn about plant
-              </a>
+                Learn about {this.props.plantName}
+              </button>
               <div className="img-container">
                 <img alt={this.props.plantName} src={this.props.image} />
               </div>
@@ -55,13 +55,15 @@ class PlantCard extends React.Component {
             </div>
           </FrontSide>
           <BackSide style={{ backgroundColor: "#175852" }}>
-            <a
-              className="toggle-style"
-              onClick={() => this.flippyHorizontal.toggle()}
-            >
-              Go Back
-            </a>
-            {this.props.price}
+            <div className="back-container">
+              <a
+                className="toggle-style"
+                onClick={() => this.flippyHorizontal.toggle()}
+              >
+                Back
+              </a>
+              <div className="description">{this.props.price}</div>
+            </div>
           </BackSide>
         </Flippy>
       </div>
