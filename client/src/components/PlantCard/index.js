@@ -21,7 +21,6 @@ class PlantCard extends React.Component {
     return (
       <div className="plant-container">
         <Flippy
-        
           flipOnHover={false} // default false
           flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
@@ -29,18 +28,21 @@ class PlantCard extends React.Component {
           // if you pass isFlipped prop component will be controlled component.
           // and other props, which will go to div
         >
-          <FrontSide style={{padding:"0rem", boxShadow:"none"}} >
+          <FrontSide style={{ padding: "0rem", boxShadow: "none" }}>
             <div className="card">
-            <a type="button" onClick={() => this.flippyHorizontal.toggle()}>
-                  Learn about plant
-                </a>
+              <a
+                className="toggle-style"
+                onClick={() => this.flippyHorizontal.toggle()}
+              >
+                Learn about plant
+              </a>
               <div className="img-container">
                 <img alt={this.props.plantName} src={this.props.image} />
               </div>
               <div className="content">
                 <p> {this.props.plantName}</p>
                 <p>${this.props.price}</p>
-               
+
                 <Payment
                   key={this.props._id}
                   id={this.props._id}
@@ -49,18 +51,17 @@ class PlantCard extends React.Component {
                   price={this.props.price}
                   stock={this.props.stock}
                 />
-
-            
               </div>
             </div>
           </FrontSide>
           <BackSide style={{ backgroundColor: "#175852" }}>
-          <a type="button" onClick={() => this.flippyHorizontal.toggle()}>
+            <a
+              className="toggle-style"
+              onClick={() => this.flippyHorizontal.toggle()}
+            >
               Go Back
             </a>
             {this.props.price}
-
-            
           </BackSide>
         </Flippy>
       </div>
