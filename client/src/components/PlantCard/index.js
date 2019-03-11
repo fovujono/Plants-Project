@@ -6,6 +6,15 @@ import Flippy, {FrontSide, BackSide} from 'react-flippy';
 class PlantCard extends React.Component {
   constructor() {
     super();
+    this.state = {
+      isFlipped: false
+    };
+  }
+
+  toggle = () => {
+    this.setState({
+      isFlipped: !this.state.isFlipped
+    });
   }
 
   render() {
@@ -13,9 +22,9 @@ class PlantCard extends React.Component {
       <div className="plant-container">
        <Flippy
     flipOnHover={false} // default false
-    flipOnClick={true} // default false
+    flipOnClick={false} // default false
     flipDirection="horizontal" // horizontal or vertical
-    ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
+    ref={(r) => this.flippyHorizontal = r} // to use toggle method like this.flippy.toggle()
     // if you pass isFlipped prop component will be controlled component.
     // and other props, which will go to div
    
@@ -37,11 +46,17 @@ class PlantCard extends React.Component {
           price={this.props.price}
           stock={this.props.stock}
         />
+                  
+         
+              <button type="button" onClick={() => this.flippyHorizontal.toggle()}>Toggle Me!</button>
+         
       </div>
     </div>
     </FrontSide>
-    <BackSide>
-      ROCKS
+    <BackSide style={{ backgroundColor: '#175852'}}>
+      {this.props.price}
+
+      <button type="button" onClick={() => this.flippyHorizontal.toggle()}>Toggle Me!</button>
     </BackSide>
   </Flippy>
  

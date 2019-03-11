@@ -1,6 +1,6 @@
 .card {
   background: #3b945f;
-  min-height: 320px;
+  min-height: 100px;
   margin: 6px;
   margin-top: 20px;
   /* position: relative; */
@@ -38,4 +38,18 @@ p {
   font-family: 'Song Myung', serif;
   font-size: 20px;
   margin: 1px;
+}
+
+.payment-card{
+  background: #3b945f;
+  min-height: 320px;
+  margin: 6px;
+  margin-top: 20px;
+  /* position: relative; */
+  width: 230px;
+  color: black;
+  align-self: center;
+  transition: 0.3s;
+  object-fit:scale-down;
+  
 }
