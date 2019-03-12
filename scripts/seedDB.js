@@ -37,7 +37,7 @@ const plantSeed = [
   },
   {
     image:
-      "https://cdn.pixabay.com/photo/2017/12/24/08/14/fruit-3036563_1280.jpg",
+      "https://media.istockphoto.com/photos/ripe-pomegranates-on-tree-picture-id502425210?k=6&m=502425210&s=612x612&w=0&h=z65ssaJN_embPxD0j3YjKQMMiDpxotpwdoobH9WrjKM=",
     plantName: "Pomegranate Tree",
     price: 12,
     stock: 12,
@@ -61,9 +61,9 @@ const plantSeed = [
     plantName: "Persimmons",
     price: 15,
     stock: 10,
-    description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    description: "When a persimmon fruit is ripe the taste is sweet and has a honeyed flavor. Some people use the persimmon tree's wood to make golf club heads or billard cues and even house floors.",
+    water: "Water: To produce good fruit water for at least 10 minutes once-twice a week.",
+    sunlight: "Sunlight or shade: Full sun"
   },
   {
     image:
@@ -73,7 +73,7 @@ const plantSeed = [
     stock: 12,
     description: "a",
     water: "Water:",
-    sunlight: "Sunlight or shade:"
+    sunlight: "Sunlight or shade: Full sun"
   },
   {
     image:
@@ -197,7 +197,7 @@ const plantSeed = [
   },
   {
     image:
-      "https://cdn.pixabay.com/photo/2018/04/18/22/25/nature-3331778_1280.jpg",
+      "https://img.freepik.com/free-photo/plumbago-auriculata_38897-3.jpg?size=626&ext=jpg",
     plantName: "Plumbago",
     price: 9,
     stock: 10,
