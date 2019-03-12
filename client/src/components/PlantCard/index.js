@@ -53,23 +53,25 @@ class PlantCard extends React.Component {
                   description={this.props.description}
                   water={this.props.water}
                   sunlight={this.props.sunlight}
-                
-
                 />
               </div>
             </div>
           </FrontSide>
           <BackSide style={{ backgroundColor: "#175852" }}>
-            <div className="back-container">
-              <a
+          <a
                 className="toggle-style"
                 onClick={() => this.flippyHorizontal.toggle()}
               >
                 Back
               </a>
+            <div className="back-container">
               <div className="description">{this.props.description}</div>
-              <p class="water-sun">{this.props.water}</p>
-              <p class="water-sun">{this.props.sunlight}</p>
+
+              <p className="water-sun">{this.props.sunlight}</p>
+
+              <p className="water-sun">{this.props.water}</p>
+
+             
             </div>
           </BackSide>
         </Flippy>

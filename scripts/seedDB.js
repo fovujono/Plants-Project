@@ -12,7 +12,7 @@ const plantSeed = [
     stock: 40,
     description: "Magnolia's require little care. They are resistant to many diseases and pests. They can survive hot summers and cold winters. Look great year-round. Can grow to be large tree's or can be kept short by pruning",
     water: "Water: once a week during the first two growing seasons and twice a month in subsequent years. ",
-    sunlight: "Sunlight or shade:"
+    sunlight: "Sunlight : Full sun to partial shade"
 
   },
   {
@@ -21,9 +21,9 @@ const plantSeed = [
     plantName: "Bougainvillea",
     price: 14,
     stock: 20,
-    description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    description: "Beautiful vine with strong vibrant flowers, they grow fast, and thrive in warmer temperatures so make sure to cover them up during harsh winters.",
+    water: "Water: Water daily if in pot, if in ground once-twice a week",
+    sunlight: "Sunlight : Full sun to produce beatiful colorful flowers"
   },
   {
     image:
@@ -31,19 +31,19 @@ const plantSeed = [
     plantName: "Kumquat Tree",
     price: 13,
     stock: 20,
-    description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    description: "Produces the Kumquat fruit. Kumquats have edible skin and the juice is tart, it is common to squeeze the juice out of the fruit if you don't like the tart taste then eat the rest which is sweet.",
+    water: "Water : Younger trees need moist soil to grow, once established water less often and during dry weather.",
+    sunlight: "Sunlight : Full sun"
   },
   {
     image:
       "https://cdn.pixabay.com/photo/2017/12/24/08/14/fruit-3036563_1280.jpg",
-    plantName: "Pomegranate",
+    plantName: "Pomegranate Tree",
     price: 12,
     stock: 12,
-    description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    description: "This tree bares fruit which has edible seeds. Taste can vary from a slightly sour to a sharp stronger taste.",
+    water: "Water: Three to four times a week untill established then, once every ten days",
+    sunlight: "Sunlight : Full sun"
   },
   {
     image:
@@ -51,9 +51,9 @@ const plantSeed = [
     plantName: "Mango Tree",
     price: 25,
     stock: 10,
-    description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    description: "Ripe mango fruits have a rich and sweet taste to them. Mango trees thrive in warmer tropical weather.",
+    water: "Water: Lots of water daily until established, then water at least three times a week.",
+    sunlight: "Sunlight or shade: Full sun"
   },
   {
     image:
