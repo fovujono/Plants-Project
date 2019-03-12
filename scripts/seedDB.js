@@ -72,7 +72,7 @@ const plantSeed = [
     price: 20,
     stock: 12,
     description: "a",
-    water: "Water:",
+    water: "Water: Water everyday for thirty days until established. After thirty days every other day.",
     sunlight: "Sunlight or shade: Full sun"
   },
   {
@@ -82,8 +82,8 @@ const plantSeed = [
     price: 10,
     stock: 40,
     description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    water: "Water: Water every other day.",
+    sunlight: "Sunlight or shade: Full sun or partial shade."
   },
   {
     image:
@@ -92,7 +92,7 @@ const plantSeed = [
     price: 12,
     stock: 13,
     description: "a",
-    water: "Water:",
+    water: "Water: ",
     sunlight: "Sunlight or shade:"
   },
   {
@@ -102,8 +102,8 @@ const plantSeed = [
     price: 15,
     stock: 20,
     description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    water: "Water: Hibiscus needs a lot of water to stay healthly. Water everyday if possible. ",
+    sunlight: "Sunlight or shade: Full sun"
   },
   {
     image:
@@ -112,8 +112,8 @@ const plantSeed = [
     price: 13,
     stock: 10,
     description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    water: "Water: Every day for thirty days until established. Every other day after established.",
+    sunlight: "Sunlight or shade: Partial shade"
   },
   {
     image:
@@ -122,8 +122,8 @@ const plantSeed = [
     price: 18,
     stock: 10,
     description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    water: "Water:  Every day for thirty days until established. Every other day after established.",
+    sunlight: "Sunlight or shade: Full sun."
   },
   {
     image:
@@ -132,8 +132,8 @@ const plantSeed = [
     price: 12,
     stock: 10,
     description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    water: "Water: Every day for thirty days until established. Every other day after established.",
+    sunlight: "Sunlight or shade: Full sun"
   },
   {
     image:
@@ -142,8 +142,8 @@ const plantSeed = [
     price: 11,
     stock: 10,
     description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    water: "Water: Every day for thirty days until established. Every other day after established.",
+    sunlight: "Sunlight or shade: Partial shade"
   },
   {
     image:
@@ -152,8 +152,8 @@ const plantSeed = [
     price: 8,
     stock: 10,
     description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    water: "Water: Every day for thirty days until established. Every other day after established.",
+    sunlight: "Sunlight or shade: Partial shade."
   },
   {
     image:
@@ -162,8 +162,8 @@ const plantSeed = [
     price: 14,
     stock: 10,
     description: "a",
-     water: "Water:",
-    sunlight: "Sunlight or shade:"
+     water: "Water: Every day for thirty days until established. Every other day after established."",
+    sunlight: "Sunlight or shade: Full sun"
   },
   {
     image:
@@ -172,8 +172,8 @@ const plantSeed = [
     price: 14,
     stock: 10,
     description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    water: "Water: Every day for thirty days until established. Every other day after established.",
+    sunlight: "Sunlight or shade: Partial shade."
   },
   {
     image:
@@ -182,8 +182,8 @@ const plantSeed = [
     price: 25,
     stock: 10,
     description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    water: "Water: Every day for thirty days until established. Every other day after established.",
+    sunlight: "Sunlight or shade: Full sun"
   },
   {
     image:
@@ -192,7 +192,7 @@ const plantSeed = [
     price: 17,
     stock: 10,
     description: "a",
-    water: "Water:",
+    water: "Water: Every day for thirty days until established. Every three days after that.",
     sunlight: "Sunlight or shade:"
   },
   {
@@ -202,8 +202,8 @@ const plantSeed = [
     price: 9,
     stock: 10,
     description: "a",
-    water: "Water:",
-    sunlight: "Sunlight or shade:"
+    water: "Water: Every day for thirty days until established. Every other day after established.",
+    sunlight: "Sunlight or shade: Full sun"
   }
 ];
 
