@@ -78,4 +78,8 @@ p {
 .description {
   margin-top: 15px;
   height:50%;
+  text-align: center;
+}
+.water-sun{
+  font-size: 15px;
 }

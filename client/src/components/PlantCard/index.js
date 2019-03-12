@@ -68,8 +68,8 @@ class PlantCard extends React.Component {
                 Back
               </a>
               <div className="description">{this.props.description}</div>
-              <p>{this.props.water}</p>
-              <p>{this.props.sunlight}</p>
+              <p class="water-sun">{this.props.water}</p>
+              <p class="water-sun">{this.props.sunlight}</p>
             </div>
           </BackSide>
         </Flippy>

@@ -10,8 +10,8 @@ const plantSeed = [
     plantName: "Magnolia",
     price: 35,
     stock: 40,
-    description: "Require very little care.Are resistant to many diseases and pests. Tolerate harsh Southern summers. Provide year-round beauty.Seeds and foliage are favorites of migrating birds.",
-    water: "Water:",
+    description: "Magnolia's require little care. They are resistant to many diseases and pests. They can survive hot summers and cold winters. Look great year-round. Can grow to be large tree's or can be kept short by pruning",
+    water: "Water: once a week during the first two growing seasons and twice a month in subsequent years. ",
     sunlight: "Sunlight or shade:"
 
   },
