@@ -50,6 +50,7 @@ class PlantCard extends React.Component {
                   plantName={this.props.plantName}
                   price={this.props.price}
                   stock={this.props.stock}
+                  description={this.props.description}
                 />
               </div>
             </div>
@@ -62,7 +63,7 @@ class PlantCard extends React.Component {
               >
                 Back
               </a>
-              <div className="description">{this.props.price}</div>
+              <div className="description">{this.props.description}</div>
             </div>
           </BackSide>
         </Flippy>

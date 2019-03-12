@@ -43,7 +43,7 @@ class Cart extends React.Component {
               <div className="content-box">
                 <p>Plant: {cart.plantName}</p>
                 <p>Amount: {cart.count} </p>
-                <p>Price of each: ${cart.price} <a onClick={(e) => this.removeItem(cart.id)} style={{'float': 'right', 'font-size': '15px', 'cursor': 'pointer'}}>Delete</a></p>       
+                <p>Price of each: ${cart.price} <a onClick={(e) => this.removeItem(cart.id)} style={{'float': 'right', 'font-size': '15px', 'cursor': 'pointer'}}><i class="fas fa-trash-alt"></i> Delete </a></p>       
                 <hr/>        
               </div>
               
