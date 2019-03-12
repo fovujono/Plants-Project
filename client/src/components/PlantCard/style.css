@@ -38,20 +38,6 @@ p {
   margin: 1px;
 }
 
-.flippy-front,
-.flippy-back {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 0rem;
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  background: transparent;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
 
 .flippy-back{
  max-height: 400px;
