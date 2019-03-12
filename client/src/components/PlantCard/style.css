@@ -56,8 +56,8 @@ p {
 /* Back of card */
 
 .back-container {
-  background: yellow;
   height: 100%;
+  color: white;
 }
 
 .toggle-style {
@@ -66,8 +66,9 @@ p {
   text-align: left;
   height: 100%;
   width: 100%;
-  background: none !important;
+  background: none;
   border: none;
+  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -75,6 +76,6 @@ p {
   color: #069;
 }
 .description {
-  background: white;
-  height: 80%;
+  margin-top: 15px;
+  height:50%;
 }

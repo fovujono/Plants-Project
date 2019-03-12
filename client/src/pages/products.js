@@ -56,6 +56,8 @@ class Products extends React.Component {
                   price={plants.price}
                   stock={plants.stock}
                   description={plants.description}
+                  water={plants.water}
+                  sunlight={plants.sunlight}
                 />
               ))
             : "NO RESULTS"}

@@ -10,7 +10,10 @@ const plantSeed = [
     plantName: "Magnolia",
     price: 35,
     stock: 40,
-    description: "a"
+    description: "Require very little care.Are resistant to many diseases and pests. Tolerate harsh Southern summers. Provide year-round beauty.Seeds and foliage are favorites of migrating birds.",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
+
   },
   {
     image:
@@ -18,7 +21,9 @@ const plantSeed = [
     plantName: "Bougainvillea",
     price: 14,
     stock: 20,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -26,7 +31,9 @@ const plantSeed = [
     plantName: "Kumquat Tree",
     price: 13,
     stock: 20,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -34,7 +41,9 @@ const plantSeed = [
     plantName: "Pomegranate",
     price: 12,
     stock: 12,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -42,7 +51,9 @@ const plantSeed = [
     plantName: "Mango Tree",
     price: 25,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -50,7 +61,9 @@ const plantSeed = [
     plantName: "Persimmons",
     price: 15,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -58,7 +71,9 @@ const plantSeed = [
     plantName: "Peach",
     price: 20,
     stock: 12,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -66,7 +81,9 @@ const plantSeed = [
     plantName: "Knockout Rose",
     price: 10,
     stock: 40,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -74,7 +91,9 @@ const plantSeed = [
     plantName: "Camellia Tree",
     price: 12,
     stock: 13,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -82,7 +101,9 @@ const plantSeed = [
     plantName: "Hibiscus",
     price: 15,
     stock: 20,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -90,7 +111,9 @@ const plantSeed = [
     plantName: "Azalea",
     price: 13,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -98,7 +121,9 @@ const plantSeed = [
     plantName: "Angel Trumpet",
     price: 18,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -106,7 +131,9 @@ const plantSeed = [
     plantName: "Confederate Jasmine",
     price: 12,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -114,7 +141,9 @@ const plantSeed = [
     plantName: "Croton Petra",
     price: 11,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -122,7 +151,9 @@ const plantSeed = [
     plantName: "Variegated Ginger",
     price: 8,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -130,7 +161,9 @@ const plantSeed = [
     plantName: "Green Ligustrum",
     price: 14,
     stock: 10,
-    description: "a"
+    description: "a",
+     water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -138,7 +171,9 @@ const plantSeed = [
     plantName: "Phantom Hydrangea",
     price: 14,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -146,7 +181,9 @@ const plantSeed = [
     plantName: "Orchid Tree",
     price: 25,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -154,7 +191,9 @@ const plantSeed = [
     plantName: "Tabebuia",
     price: 17,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   },
   {
     image:
@@ -162,7 +201,9 @@ const plantSeed = [
     plantName: "Plumbago",
     price: 9,
     stock: 10,
-    description: "a"
+    description: "a",
+    water: "Water:",
+    sunlight: "Sunlight or shade:"
   }
 ];
 
