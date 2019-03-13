@@ -5,14 +5,12 @@
 }
 
 .login-page {
+  min-height: 300px;
   width: 340px; 
   height: 100%;
   margin: 0px;
 }
 
-body {
-  font-size: 14px;
-}
 
 .about-paragraph{
   margin: 0px;
@@ -21,7 +19,7 @@ body {
 
 }
 .let-us-know{
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
 }

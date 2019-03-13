@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./style.css";
 import Nav from "./components/Nav";
-import About from "./pages/about";
+import About from "./pages/aboutpage/about";
 import Signup from "./pages/signup";
 import Products from "./pages/products";
 
@@ -14,7 +14,7 @@ const App = () => {
         <div className="wrapper">
           <Nav />
           <Route exact path="/" component={Products} />
-          <Route exact path="/about" component={About} />
+          <Route exact path="/checkout" component={About} />
           <Route exact path="/signup" component={Signup} />
         </div>
       </div>

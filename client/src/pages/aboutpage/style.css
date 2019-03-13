@@ -1,0 +1,14 @@
+.box{
+  background-color:white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.thanks{
+    font-size: 25px;
+    margin-top: 25px;
+}

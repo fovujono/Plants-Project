@@ -29,7 +29,15 @@
     height: 40px;
     width: 100px;
     font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
   
+}
+
+.checkout-button:hover{
+    background: rgb(55, 126, 58);
+   
 }
 
 #shopping-icon{

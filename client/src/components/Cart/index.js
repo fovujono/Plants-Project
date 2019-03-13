@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
 import { Image, Modal } from "semantic-ui-react";
-import { CartHelper } from '../../utils/action'
+import { CartHelper } from '../../utils/action';
+import About from '../../pages/aboutpage/about';
 
 class Cart extends React.Component {
   constructor(props) {
@@ -14,6 +15,8 @@ class Cart extends React.Component {
   
     };
   }
+
+  
 
   removeItem(id) {
     console.log('removing ' + id)
@@ -49,9 +52,11 @@ class Cart extends React.Component {
               
             </div>
           ))}
+          
               <p className="total-container"> Total: {this.state.total}</p>
+          
 
-              <button className="checkout-button">Check Out</button>
+              
         </div>
       );
     }
@@ -62,6 +67,9 @@ class Cart extends React.Component {
     let cartTotal = cartData.reduce((acc, cart) => cart.price * cart.count + acc, 0);
     this.setState({cart: cartData, total: cartTotal});
   }
+  onClick(){
+    alert("Thank you for your purchase!");
+  }  
 
 
   render() {
@@ -83,6 +91,7 @@ class Cart extends React.Component {
           <Modal.Content image>
             <Modal.Description>
               {this.renderCart()}
+              <button onClick={this.onClick}className="checkout-button">Check Out</button>
           
       
             </Modal.Description>
