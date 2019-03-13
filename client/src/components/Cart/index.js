@@ -69,8 +69,9 @@ class Cart extends React.Component {
       <div className="cart-modal">
         <Modal
           trigger={ 
-            <button className="item">
+            <button className="item" id="cart-button">
               <i className="fas fa-shopping-cart" id="shopping-icon" />
+              Cart 
             </button>
           }
           onOpen ={() => this.openCart()}

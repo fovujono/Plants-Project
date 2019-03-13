@@ -31,3 +31,18 @@
     font-size: 18px;
   
 }
+
+#shopping-icon{
+    margin-right: 4px;
+}
+#cart-button{
+    cursor: pointer;
+    border: solid 1px;
+
+}
+
+
+#cart-button:hover{
+    color: green;
+
+}
