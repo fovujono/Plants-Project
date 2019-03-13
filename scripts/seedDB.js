@@ -53,7 +53,7 @@ const plantSeed = [
     stock: 10,
     description: "Ripe mango fruits have a rich and sweet taste to them. Mango trees thrive in warmer tropical weather.",
     water: "Water: Lots of water daily until established, then water at least three times a week.",
-    sunlight: "Sunlight or shade: Full sun"
+    sunlight: "Sunlight : Full sun"
   },
   {
     image:
@@ -63,7 +63,7 @@ const plantSeed = [
     stock: 10,
     description: "When a persimmon fruit is ripe the taste is sweet and has a honeyed flavor. Some people use the persimmon tree's wood to make golf club heads or billard cues and even house floors.",
     water: "Water: To produce good fruit water for at least 10 minutes once-twice a week.",
-    sunlight: "Sunlight or shade: Full sun"
+    sunlight: "Sunlight : Full sun"
   },
   {
     image:
@@ -71,9 +71,9 @@ const plantSeed = [
     plantName: "Peach",
     price: 20,
     stock: 12,
-    description: "a",
+    description: "Peach trees can grow to be twenty feet tall and produce fruit for one-two decades.",
     water: "Water: Water everyday for thirty days until established. After thirty days every other day.",
-    sunlight: "Sunlight or shade: Full sun"
+    sunlight: "Sunlight : Full sun"
   },
   {
     image:
@@ -81,9 +81,9 @@ const plantSeed = [
     plantName: "Knockout Rose",
     price: 10,
     stock: 40,
-    description: "a",
+    description: "Easy to grow rose, hardly gets any diseases, blooms very often at about every five to six weeks with large flower buds.",
     water: "Water: Water every other day.",
-    sunlight: "Sunlight or shade: Full sun or partial shade."
+    sunlight: "Sunlight : Full sun or partial shade."
   },
   {
     image:
@@ -91,9 +91,9 @@ const plantSeed = [
     plantName: "Camellia Tree",
     price: 12,
     stock: 13,
-    description: "a",
+    description: "Can reach heights up to twenty five feet. Produces large ammounts of flower buds and have blooming seasons extending for several months.",
     water: "Water: ",
-    sunlight: "Sunlight or shade:"
+    sunlight: "Sunlight : Full Sun"
   },
   {
     image:
@@ -101,9 +101,9 @@ const plantSeed = [
     plantName: "Hibiscus",
     price: 15,
     stock: 20,
-    description: "a",
+    description: "Great tropical plants, loves warm weather but also needs alot of water. Many people use the hibiscus leaves to make delicious tea.",
     water: "Water: Hibiscus needs a lot of water to stay healthly. Water everyday if possible. ",
-    sunlight: "Sunlight or shade: Full sun"
+    sunlight: "Sunlight : Full sun"
   },
   {
     image:
@@ -111,9 +111,9 @@ const plantSeed = [
     plantName: "Azalea",
     price: 13,
     stock: 10,
-    description: "a",
+    description: "Azaleas are great shrubs that are often used for flower beds or even kept indoors since they enjoy being in the shade.  ",
     water: "Water: Every day for thirty days until established. Every other day after established.",
-    sunlight: "Sunlight or shade: Partial shade"
+    sunlight: "Sunlight : Partial shade"
   },
   {
     image:
@@ -121,9 +121,9 @@ const plantSeed = [
     plantName: "Angel Trumpet",
     price: 18,
     stock: 10,
-    description: "a",
+    description: " An easy to grow and maintain plant. The Angel Trumpet tree gets its name from its long flowers that resemble trumpets.",
     water: "Water:  Every day for thirty days until established. Every other day after established.",
-    sunlight: "Sunlight or shade: Full sun."
+    sunlight: "Sunlight : Full sun."
   },
   {
     image:
@@ -131,9 +131,9 @@ const plantSeed = [
     plantName: "Confederate Jasmine",
     price: 12,
     stock: 10,
-    description: "a",
+    description: "The Confederate Jasmine is a vine that grows fast and is great to put next to a fence or against an arch. Releases a very strong and pleasant smell that is a favorite of butterflies. ",
     water: "Water: Every day for thirty days until established. Every other day after established.",
-    sunlight: "Sunlight or shade: Full sun"
+    sunlight: "Sunlight : Full sun"
   },
   {
     image:
@@ -141,9 +141,9 @@ const plantSeed = [
     plantName: "Croton Petra",
     price: 11,
     stock: 10,
-    description: "a",
+    description: "Croton Petra is a shrub that loves the warm southern weather. Its most attractive feature is it's leaves, which come in serveral warm colors.",
     water: "Water: Every day for thirty days until established. Every other day after established.",
-    sunlight: "Sunlight or shade: Partial shade"
+    sunlight: "Sunlight : Partial shade"
   },
   {
     image:
@@ -151,9 +151,9 @@ const plantSeed = [
     plantName: "Variegated Ginger",
     price: 8,
     stock: 10,
-    description: "a",
+    description: "Nice compact plant that has eye catching stripes on its long leaves. Great plant to keep indoors or have on a patio.",
     water: "Water: Every day for thirty days until established. Every other day after established.",
-    sunlight: "Sunlight or shade: Partial shade."
+    sunlight: "Sunlight : Partial shade."
   },
   {
     image:
@@ -161,9 +161,9 @@ const plantSeed = [
     plantName: "Green Ligustrum",
     price: 14,
     stock: 10,
-    description: "a",
-     water: "Water: Every day for thirty days until established. Every other day after established."",
-    sunlight: "Sunlight or shade: Full sun"
+    description: "The Green Ligustrum's dense growth patern makes it the perfect plant for those who are looking to make create a firm looking hedge. ",
+     water: "Water: Every day for thirty days until established. Every other day after established.",
+    sunlight: "Sunlight : Full sun"
   },
   {
     image:
@@ -171,9 +171,9 @@ const plantSeed = [
     plantName: "Phantom Hydrangea",
     price: 14,
     stock: 10,
-    description: "a",
+    description: "The Phantom Hydrangea is a great pick for those looking for a plant that stands out. Its unique flower head is oval in shape and is a great choice for any landscape.",
     water: "Water: Every day for thirty days until established. Every other day after established.",
-    sunlight: "Sunlight or shade: Partial shade."
+    sunlight: "Sunlight : Partial shade."
   },
   {
     image:
@@ -181,9 +181,9 @@ const plantSeed = [
     plantName: "Orchid Tree",
     price: 25,
     stock: 10,
-    description: "a",
+    description: "The Orchid Tree has been made popular for its gorgeous other-worldly flower.",
     water: "Water: Every day for thirty days until established. Every other day after established.",
-    sunlight: "Sunlight or shade: Full sun"
+    sunlight: "Sunlight : Full sun"
   },
   {
     image:
@@ -191,9 +191,9 @@ const plantSeed = [
     plantName: "Tabebuia",
     price: 17,
     stock: 10,
-    description: "a",
+    description: "A Tabebuia tree has small little trumpet like flowers. They are also resistant to droughts but watering them frequently doesn't hurt.",
     water: "Water: Every day for thirty days until established. Every three days after that.",
-    sunlight: "Sunlight or shade:"
+    sunlight: "Sunlight : Full Sun"
   },
   {
     image:
@@ -201,9 +201,9 @@ const plantSeed = [
     plantName: "Plumbago",
     price: 9,
     stock: 10,
-    description: "a",
+    description: "Plumbago has vibrant blue flowers, and even though it is a shrub its branches resemble that of a vine. It is hardy against disease and pests.",
     water: "Water: Every day for thirty days until established. Every other day after established.",
-    sunlight: "Sunlight or shade: Full sun"
+    sunlight: "Sunlight : Full sun"
   }
 ];
 
