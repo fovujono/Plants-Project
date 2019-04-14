@@ -14,8 +14,7 @@ router.use(function(req, res, next) {
 
 router
   .route("/")
-  .get(PlantsController.findAll)
-  .post(PlantsController.create);
+  .get(PlantsController.findAll);
 
 // Matches with "/api/books/:id"
 router
