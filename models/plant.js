@@ -6,9 +6,16 @@ const plantSchema = new Schema({
   plantName: { type: String, required: true },
   price: {type: Number},
   stock: { type: Number},
-  date: { type: Date, default: Date.now }
+  description: { type: String},
+  water: {type: String},
+  sunlight: {type: String}
 });
 
-const Plant = mongoose.model("Plant", plantSchema);
+const realPlantSchema = new Schema({
+  _id: {type: String},
+  PlantSeed: [plantSchema]
+});
+
+const Plant = mongoose.model("Plant", realPlantSchema);
 
 module.exports = Plant;
