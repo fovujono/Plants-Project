@@ -2,7 +2,7 @@ const path = require("path");
 const router = require("express").Router();
 const apiRoutes = require("./api/plants");
 
-router.use("/api", apiRoutes);
+router.use("/api/plants", apiRoutes);
 
 
 
