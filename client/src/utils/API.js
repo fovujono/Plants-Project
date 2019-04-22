@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets all books
   getPlants: function() {
-    return axios.get(`/api/plants`);
+    return axios.get("http://localhost:3004/api/plants/");
   },
   // Saves a book to the database
   savePlants: function(PlantData) {
